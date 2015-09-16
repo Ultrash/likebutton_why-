@@ -1,0 +1,23 @@
+<!--like button-->
+<button id= "like_button" value= "submit">
+    <span class="glyphicon glyphicon-heart-empty" aria-hidden="true" style="color:#AA1212"></span>
+</button>
+<script>
+  var count = 0;
+  $('#like_button').click( function(){
+    $(this).find('span').toggleClass('glyphicon-heart-empty').toggleClass('glyphicon-heart');
+});
+</script>  <!--클릭하면 바뀌기-->
+
+
+
+<!--bookmark button-->
+<button id= "bookmark_button" value= "submit">
+    <span class="glyphicon glyphicon-star-empty" aria-hidden="true" style="color:#FFCD12"></span>
+</button>
+<script>
+  var count = 0;
+  $('#bookmark_button').click( function(){
+    $(this).find('span').toggleClass('glyphicon-star-empty').toggleClass('glyphicon-star');
+});
+</script>  <!--클릭하면 바뀌기-->
